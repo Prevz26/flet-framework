@@ -36,7 +36,8 @@ class App (ft.UserControl):
                 color="black",
                 text_align="center",
                 weight = "w900", #boldness
-                size = 25),
+                size = 25
+                ),
                 
                 ft.Text(
                 value="Precious Ojogu", 
@@ -52,6 +53,7 @@ class App (ft.UserControl):
 def main(page: ft.Page):
     #This is the main and entry point of our code, it specifies the page, here we set attributes attached to the window page
     #Page is the root container control, i.e it is a control that can nest other controls 
+    #this are some attributes associated with the page container
     page.window_height = 800
     page.window_width = 700
     page.bgcolor = ft.colors.WHITE
@@ -61,7 +63,7 @@ def main(page: ft.Page):
     #creating an instance of the App class where we define our controls and design
     app = App()
     
-    #adding the App object(our design) to the page, this is what renders the app to the page
+    #adding the App object(our design) to the page, this is what renders the app(interface) unto the page
     page.add(
         app
     )
